@@ -1,0 +1,32 @@
+---
+layout: "example"
+---
+{% for table in site.tables %}
+    {% if table.tags contains "football" and table.tags contains "2015-2016" %}
+    <h3><a href="{{ table.name }}" id="{{ table.relative_path }}" name="{{ table.relative_path }}"></a>{{ table.title }}</h3>
+
+    <div class="two-side-content">
+        <div class="side">
+            {{ content }}
+        </div>
+        <div class="side">
+            <h4 class="side-head">Source</h4>
+            {% highlight html %}
+            {{ content }}
+            {% endhighlight %}
+            <p><a href="{{ table.csv }}">Download CSV (14 KB)</a></p>
+
+            <h4 class="side-head">Embed</h4>
+            {% highlight html %}
+            <iframe
+               src="{{ table.url | prepend:site.url }}"
+               frameBorder="0"
+               scrolling="no"
+               width="{{ table.width }}"
+               height="{{ table.height }}">
+            </iframe>
+            {% endhighlight %}
+        </div>
+    </div>
+    {% endif %}
+{% endfor %}
