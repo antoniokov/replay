@@ -9,7 +9,12 @@
         <h2>Examples</h2>
     {% endif %}
 
-    {% assign sortedTables = site.tables | sort: "order" %}
+    {% if page.tags contains "main" %}
+        {% assign sortedTables = site.tables | sort: "sport-order" %}
+    {% else %}
+        {% assign sortedTables = site.tables | sort: "name" %}
+    {% endif %}
+
     {% for table in sortedTables %}
         {% assign isRelevant = true %}
             {% for tag in page.tags %}

@@ -3,14 +3,15 @@ layout: "table"
 name: "formula-one-drivers"
 title: "Formula One Driver Standings"
 tags: [main, formula-one, non-team, 2015-2016]
-order: "2-1"
+sport-order: 2
+table-order: 1
 csv-size: 2
 width: 360
 height: 781
 ---
 <div class="replayTable"
-  data-csv="{{ page.url | replace: "tables", "assets/csv" | replace: ".html",".csv" }}"
-  data-preset="F1"
-  data-extra-columns-number="1"
-  data-table-name="{{ page.name }}">
+    data-csv="{{ page.url | replace: "tables", "assets/csv" | replace: ".html",".csv" }}"
+    data-preset="F1"
+    data-extra-columns-number="1"
+    data-table-name="{{ page.name }}">
 </div>
