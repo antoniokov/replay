@@ -51,8 +51,8 @@
       <file leaf-file-name="examples.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/examples.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+            <state relative-caret-position="330">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -131,6 +131,7 @@
         <option value="$PROJECT_DIR$/_tables/basketball/2015-2016/nba-western.html" />
         <option value="$PROJECT_DIR$/_tables/football/2015-2016/english-premier-league.html" />
         <option value="$PROJECT_DIR$/_tables/football/2015-2016/german-bundesliga.html" />
+        <option value="$PROJECT_DIR$/_includes/table-of-contents.html" />
         <option value="$PROJECT_DIR$/_layouts/examples.html" />
       </list>
     </option>
@@ -564,12 +565,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1483190970111</updated>
-      <workItem from="1483190971499" duration="24946000" />
+      <workItem from="1483190971499" duration="25518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24946000" />
+    <option name="totallyTimeSpent" value="25518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -766,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/chgk/2015-2016/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_tables/football/2015-2016/english-premier-league.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -790,10 +783,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/chgk/2015-2016/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/examples.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="54" lean-forward="false" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="330">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/table-of-contents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding />
         </state>
       </provider>

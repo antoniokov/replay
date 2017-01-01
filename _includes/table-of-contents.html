@@ -1,0 +1,17 @@
+<div class="contents">
+    <ul class="contents-list">
+        {% assign sortedTables = site.tables | sort: "name" %}
+        {% for table in sortedTables %}
+            {% assign isRelevant = true %}
+            {% for tag in page.tags %}
+                {% if table.tags contains tag %}
+                {% else %}
+                    {% assign isRelevant = false %}
+                {% endif %}
+            {% endfor %}
+            {% if isRelevant == true %}
+            <li class="contents-item"><a href="#{{ table.name }}">{{ table.title }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
