@@ -1,0 +1,17 @@
+---
+layout: "table"
+name: "nba-western"
+title: "NBA Western Conference"
+tags: [main, north-america, basketball, 2015-2016]
+order: "3-1"
+csv-size: 70
+width: 400
+height: 530
+---
+<div class="replayTable"
+  data-csv="{{ page.url | replace: "tables", "assets/csv" | replace: ".html",".csv" | prepend: site.url }}"
+  data-preset="WinsLosses"
+  data-start-round-name="Start"
+  data-items-to-show="Golden State Warriors,San Antonio Spurs,Oklahoma City Thunder,Los Angeles Clippers,Portland Trail Blazers,Dallas Mavericks,Memphis Grizzlies,Houston Rockets,Utah Jazz,Sacramento Kings,Denver Nuggets,New Orleans Pelicans,Minnesota Timberwolves,Phoenix Suns,Los Angeles Lakers">
+  data-table-name="{{ page.name }}">
+</div>

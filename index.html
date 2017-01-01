@@ -1,1 +1,65 @@
-<p>Hello, tables.</p>
+---
+layout: "examples"
+title: "Replay Table"
+tags: [main]
+---
+<div class="about" id="about-section" name="about-section">
+    <h2>
+        Transform season results into interactive&nbsp;standings
+    </h2>
+
+    <div class="side">
+        <div class="main-demo">
+            <div class="replayTable"
+                 data-csv="https://s3-us-west-2.amazonaws.com/replay-table/csv/football/england/premier-league/2015-2016.csv"
+                 data-input-type="listOfMatches"
+                 data-use-rounds-numbers="true"
+                 data-table-name="Demo">
+            </div>
+        </div>
+    </div>
+
+    <div class="side">
+        <div class="howto">
+            <p>
+                <span class="step-num">1</span>
+                Prepare a <a target="_blank" href="https://github.com/TargetProcess/replayTable#input">csv file</a> with season results or download one from our <a href="https://targetprocess.github.io/replayTable/#examples">examples</a>.
+            </p>
+
+            <br/>
+
+            <p>
+                <span class="step-num">2</span>
+                Put a <span class="code-word">div</span> with <span class="code-word">replayTable</span> class on your page and supply a link to the csv file using <span class="code-word">data-csv</span> attribute:
+            </p>
+
+            {% highlight html %}
+            <div class="replayTable"
+                 data-csv="/path/to/file.csv">
+            </div>
+            {% endhighlight %}
+
+            <p>
+                <span class="step-num">3</span>
+                Finally, include Replay Table script and stylesheet:
+            </p>
+
+            {% highlight html %}
+            <head>
+                ...
+                <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/replay-table/latest/replay-table.css">
+            </head>
+            <body>
+            ...
+            <script type="text/javascript" src="//cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
+            </body>
+            {% endhighlight %}
+
+
+            <p>
+                The table is highly customizable via <span class="code-word">data-</span> attributes. Check out our <a target="_blank" href="https://github.com/TargetProcess/replayTable#customization">docs</a>.
+            </p>
+
+        </div>
+    </div>
+</div>

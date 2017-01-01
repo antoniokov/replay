@@ -1,0 +1,17 @@
+---
+layout: "table"
+name: "english-premier-league"
+title: "English Premier League"
+tags: [main, europe, football, 2015-2016]
+order: "1-1"
+csv-size: 14
+width: 300
+height: 670
+---
+<div class="replayTable"
+  data-csv="{{ page.url | replace: "tables", "assets/csv" | replace: ".html",".csv" | prepend: site.url }}"
+  data-input-type="listOfMatches"
+  data-item-name="Team"
+  data-use-rounds-numbers="true"
+  data-table-name="{{ page.name }}">
+</div>

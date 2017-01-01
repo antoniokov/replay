@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+<body>
+{% include header.html %}
+    {{ content }}
+    <div class="examples" id="examples">
+    {% if page.tags contains "main" %}
+        <h2>Examples</h2>
+    {% endif %}
+
+    {% assign sortedTables = site.tables | sort: "order" %}
+    {% for table in sortedTables %}
+        {% assign isRelevant = true %}
+            {% for tag in page.tags %}
+                {% if table.tags contains tag %}
+                {% else %}
+                    {% assign isRelevant = false %}
+                {% endif %}
+            {% endfor %}
+        {% if isRelevant == true %}
+        <h3><a href="#{{ table.name }}" id="{{ table.name }}" name="{{ table.name }}"></a>{{ table.title }}</h3>
+
+        <div class="two-side-content">
+            <div class="side">
+                {{ table.content }}
+            </div>
+            <div class="side">
+                <h4 class="side-head">Source</h4>
+                {% highlight html %}
+                {{ table.content }}
+                {% endhighlight %}
+                <p><a href="{{ table.url | replace: "tables", "assets/csv" | replace: ".html",".csv" | prepend: site.url }}">Download CSV ({{ table.csv-size }} KB)</a></p>
+
+                <h4 class="side-head">Embed</h4>
+                {% highlight html %}
+                <iframe
+                        src="{{ table.url | prepend:site.url }}"
+                        frameBorder="0"
+                        scrolling="no"
+                        width="{{ table.width }}"
+                        height="{{ table.height }}">
+                </iframe>
+                {% endhighlight %}
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+{% include script.html %}
+</body>
+</html>
