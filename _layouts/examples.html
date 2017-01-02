@@ -5,19 +5,11 @@
 {% include header.html %}
     {{ content }}
     <div class="examples" id="examples">
-    {% if page.tags contains "main" %}
-        <h2>Examples</h2>
-    {% else %}
-        <h2>{{ page.title }}</h2>
-        {% include table-of-contents.html %}
-    {% endif %}
+    <h2>{{ page.title }}</h2>
+    {% include table-of-contents.html %}
 
-    {% if page.tags contains "main" %}
-        {% assign sortedTables = site.tables | sort: "sport-order" %}
-    {% else %}
-        {% assign sortedTables = site.tables | sort: "name" %}
-    {% endif %}
-
+    {% assign orderBy = page.orderBy | default: "name" %}
+    {% assign sortedTables = site.tables | sort: orderBy %}
     {% for table in sortedTables %}
         {% assign isRelevant = true %}
             {% for tag in page.tags %}
@@ -27,7 +19,7 @@
                 {% endif %}
             {% endfor %}
         {% if isRelevant == true %}
-        <h3><a href="#{{ table.name }}" id="{{ table.name }}" name="{{ table.name }}"></a>{{ table.title }}</h3>
+        <h3><a href="#{{ table.name }}" id="{{ table.name }}" name="{{ table.name }}"></a>{{ table.sport-title | default: table.title }}</h3>
 
         <div class="two-side-content">
             <div class="side">

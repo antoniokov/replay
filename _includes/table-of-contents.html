@@ -1,6 +1,7 @@
 <div class="contents">
     <ul class="contents-list">
-        {% assign sortedTables = site.tables | sort: "name" %}
+        {% assign orderBy = page.orderBy | default: "name" %}
+        {% assign sortedTables = site.tables | sort: orderBy %}
         {% for table in sortedTables %}
             {% assign isRelevant = true %}
             {% for tag in page.tags %}
@@ -10,7 +11,7 @@
                 {% endif %}
             {% endfor %}
             {% if isRelevant == true %}
-            <li class="contents-item"><a href="#{{ table.name }}">{{ table.title }}</a></li>
+            <li class="contents-item"><a href="#{{ table.name }}">{{ table.sport-title | default: table.title }}</a></li>
             {% endif %}
         {% endfor %}
     </ul>

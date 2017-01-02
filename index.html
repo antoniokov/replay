@@ -1,5 +1,5 @@
 ---
-layout: "examples"
+layout: "main"
 title: "Replay Table"
 tags: [main]
 ---
@@ -62,4 +62,39 @@ tags: [main]
 
         </div>
     </div>
+</div>
+
+<div class="examples" id="examples">
+    <h2>Examples</h2>
+
+    {% assign sortedTables = site.tables | sort: "sport-order" %}
+    {% for table in sortedTables %}
+        {% if table.tags contains "main" %}
+        <h3><a href="#{{ table.name }}" id="{{ table.name }}" name="{{ table.name }}"></a>{{ table.title }}</h3>
+
+        <div class="two-side-content">
+            <div class="side">
+                {{ table.content }}
+            </div>
+            <div class="side">
+                <h4 class="side-head">Source</h4>
+                {% highlight html %}
+                {{ table.content }}
+                {% endhighlight %}
+                <p><a href="{{ table.url | replace: "tables", "assets/csv" | replace: ".html",".csv" | prepend: site.url }}">Download CSV ({{ table.csv-size }} KB)</a></p>
+
+                <h4 class="side-head">Embed</h4>
+                {% highlight html %}
+                <iframe
+                        src="{{ table.url | prepend:site.url }}"
+                        frameBorder="0"
+                        scrolling="no"
+                        width="{{ table.width }}"
+                        height="{{ table.height }}">
+                </iframe>
+                {% endhighlight %}
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
 </div>
