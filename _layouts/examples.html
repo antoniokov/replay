@@ -30,7 +30,7 @@
                 {% highlight html %}
                 {{ table.content }}
                 {% endhighlight %}
-                <p><a href="{{ table.url | replace: "tables", "assets/csv" | replace: ".html",".csv" | prepend: site.url }}">Download CSV ({{ table.csv-size }} KB)</a></p>
+                <p><a href="{{ table.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' | prepend: site.url }}">Download CSV ({{ table.csv-size }} KB)</a></p>
 
                 <h4 class="side-head">Embed</h4>
                 {% highlight html %}
