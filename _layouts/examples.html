@@ -8,6 +8,7 @@
     {% if page.tags contains "main" %}
         <h2>Examples</h2>
     {% else %}
+        <h2>{{ page.title }}</h2>
         {% include table-of-contents.html %}
     {% endif %}
 
