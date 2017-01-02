@@ -8,10 +8,4 @@ csv-size: 14
 width: 300
 height: 670
 ---
-<div class="replayTable"
-    data-csv="{{ page.url | replace: "tables", "assets/csv" | replace: ".html",".csv" }}"
-    data-input-type="listOfMatches"
-    data-item-name="Team"
-    data-use-rounds-numbers="true"
-    data-table-name="{{ page.name }}">
-</div>
+{% include tables/football.html %}
