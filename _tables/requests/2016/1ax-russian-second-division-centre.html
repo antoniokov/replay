@@ -1,0 +1,22 @@
+---
+layout: "table"
+name: "russian-second-division-centre"
+title: "Russian Second Division Centre"
+tags: [football, requests]
+sport-order: 1
+csv-size: 5
+width: 300
+height: 670
+---
+<div class="replayTable"
+     data-csv="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
+     data-input-type="listOfMatches"
+     data-season-name="Сезон"
+     data-round-name="Матч"
+     data-item-name="Команда"
+     data-total-name="Очки"
+     data-use-rounds-numbers="true"
+     data-rounds-total-number="24"
+     data-calculated-columns="{'rounds': 'Игры'}"
+     data-table-name="{{ page.name }}">
+</div>
