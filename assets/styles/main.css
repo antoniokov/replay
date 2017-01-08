@@ -244,13 +244,22 @@ p a:hover{
     padding: 0;
 }
 .examples ul > li{
-    margin-bottom: 0.8rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    /*padding: 0.5rem 1rem;*/
 }
 .examples ul > li > ul {
     padding-left: 2rem;
     padding-top: 0.8rem;
     padding-bottom: 0.2rem;
 }
+
+.examples ul > li a{
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
 .examples{}
 .examples p{
     text-align: left;
@@ -272,25 +281,35 @@ p a:hover{
 }
 
 .examples .two-side-content{
-    display: table;
+    /*display: table;*/
+    display: block !important;
+    padding-bottom: 4rem;
+    margin-bottom: 10rem;
+    border-bottom: 1px dotted #e1e1e1;
 }
 .examples .two-side-content:after{
     content: '';
     display: block;
     clear: both;
 }
+.examples .two-side-content:last-child{
+    border-bottom: none;
+}
 .examples .side{
-    /*float: left;*/
-    display: table-cell;
+    float: left;
+    display: block;
     vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .examples .side:first-of-type{
     padding-right: 6rem;
-    width: 50%;
+    width: 40%;
 }
 .examples .side:last-of-type{
     padding-left: 6rem;
-    width: 50%;
+    width: 60%;
 }
 
 .examples .side p{
@@ -355,4 +374,25 @@ p a:hover{
 }
 .examples  a.category:hover{
     border-bottom-color: #e61578;
+}
+.highlight{
+    padding: 0;
+    margin: 0;
+}
+.highlight pre {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.examples code,
+.howto code{
+    font-size: 1.2rem;
+    overflow: scroll;
+    display: inline-block;
+    padding: 3rem 4rem;
+    background: rgba(92,50,138,0.05);
+    margin-bottom: 4rem;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
