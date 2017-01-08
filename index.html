@@ -33,27 +33,27 @@ tags: [main]
                 Put a <span class="code-word">div</span> with <span class="code-word">replayTable</span> class on your page and supply a link to the csv file using <span class="code-word">data-csv</span> attribute:
             </p>
 
-            {% highlight html %}
-            <div class="replayTable"
-                 data-csv="/path/to/file.csv">
-            </div>
-            {% endhighlight %}
+{% highlight html %}
+<div class="replayTable"
+     data-csv="/path/to/file.csv">
+</div>
+{% endhighlight %}
 
             <p>
                 <span class="step-num">3</span>
                 Finally, include Replay Table script and stylesheet:
             </p>
 
-            {% highlight html %}
-            <head>
-                ...
-                <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/replay-table/latest/replay-table.css">
-            </head>
-            <body>
-            ...
-            <script type="text/javascript" src="//cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
-            </body>
-            {% endhighlight %}
+{% highlight html %}
+<head>
+    ...
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/replay-table/latest/replay-table.css">
+</head>
+<body>
+...
+<script type="text/javascript" src="//cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
+</body>
+{% endhighlight %}
 
 
             <p>
@@ -78,21 +78,21 @@ tags: [main]
             </div>
             <div class="side">
                 <h4 class="side-head">Source</h4>
-                {% highlight html %}
-                {{ table.content }}
-                {% endhighlight %}
+{% highlight html %}
+{{ table.content }}
+{% endhighlight %}
                 <p><a href="{{ table.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' | prepend: site.url }}">Download CSV ({{ table.csv-size }} KB)</a></p>
 
                 <h4 class="side-head">Embed</h4>
-                {% highlight html %}
-                <iframe
-                        src="{{ table.url | prepend:site.url }}"
-                        frameBorder="0"
-                        scrolling="no"
-                        width="{{ table.width }}"
-                        height="{{ table.height }}">
-                </iframe>
-                {% endhighlight %}
+{% highlight html %}
+<iframe
+        src="{{ table.url | prepend:site.url }}"
+        frameBorder="0"
+        scrolling="no"
+        width="{{ table.width }}"
+        height="{{ table.height }}">
+</iframe>
+{% endhighlight %}
             </div>
         </div>
         {% endif %}
