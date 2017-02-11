@@ -278,7 +278,7 @@ p a:hover{
 .examples h3{
     position: relative;
     font-family: 'Roboto';
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     margin-bottom: 5rem;
 }
@@ -365,15 +365,17 @@ p a:hover{
 }
 
 .examples  a.category{
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
     white-space: nowrap;
     background: none;
     display: inline-block;
     vertical-align: bottom;
-    font-size: 1.1rem;
+    font-size: 2.2rem;
     font-family: 'RobotoBold', 'Roboto';
     text-transform: uppercase;
     color: #e61578;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
 }
 .examples  a.category:hover{
     border-bottom-color: #e61578;
