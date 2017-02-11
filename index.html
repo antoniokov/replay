@@ -70,6 +70,7 @@ tags: [main]
     {% assign sortedTables = site.tables | sort: "sport-order" %}
     {% for table in sortedTables %}
         {% if table.tags contains "main" %}
+        <h5><a href="examples/{{ table.sport | replace: ' ', '-' }}/{{ table.season | default: "2015-2016" }}">{{ table.sport }}</a></h5>
         <h3><a href="#{{ table.name }}" id="{{ table.name }}" name="{{ table.name }}"></a>{{ table.title }}</h3>
 
         <div class="two-side-content">
