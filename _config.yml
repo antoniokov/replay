@@ -23,12 +23,15 @@ url: "https://replaytable.com"
 # Build settings
 encoding: utf-8
 highlighter: rouge
+future: true
 exclude:
   - Gemfile
   - Gemfile.lock
 
 collections:
   tables:
+    output: true
+  posts:
     output: true
 
 defaults:

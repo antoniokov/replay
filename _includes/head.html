@@ -1,18 +1,16 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="/favicon.png ">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ default: site.description }}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="/favicon.png ">
+<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<meta name="description" content="{{ default: site.description }}">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/replay-table/latest/replay-table.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/replay-table/latest/replay-table.css">
 
-    {% if page.layout != "table" %}
-        <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
-        <link rel="stylesheet" type="text/css" href="/assets/styles/syntax.css">
-    {% else %}
-        <link rel="stylesheet" type="text/css" href="/assets/styles/table.css">
-    {% endif %}
+{% if page.layout != "table" %}
+    <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/syntax.css">
+{% else %}
+    <link rel="stylesheet" type="text/css" href="/assets/styles/table.css">
+{% endif %}
 
-    {% include google-analytics.html %}
-</head>
+{% include google-analytics.html %}
