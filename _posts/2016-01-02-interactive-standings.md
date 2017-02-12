@@ -15,7 +15,7 @@ It started with me looking at Premier League table and asking questions:
 * I remember Southampton being deeeeeep down the table but they somehow have qualified for the Europa League. 
 How did they manage to climb up?
 
-![Premier League Table]({{ site.url }}/assets/images/posts/interactive-standings/premier-league-sky.png)
+![Premier League Table]({{ site.url }}/assets/images/posts/interactive-standings/premier-league-table.png)
 
 Static table hadn’t got any answers for me. So I began researching the alternatives.
 
@@ -23,8 +23,8 @@ Static table hadn’t got any answers for me. So I began researching the alterna
 **Form/Streak**
 
 <div class="fotorama">
-    <img src="http://blog.antoniokov.com/pictures/premier-league-form.png">
-    <img src="http://blog.antoniokov.com/pictures/nba-streak.png">
+    <img src="{{ site.url }}/assets/images/posts/interactive-standings/premier-league-form.png">
+    <img src="{{ site.url }}/assets/images/posts/interactive-standings/nba-streak.png">
 </div>
 
 Form columns have recently become popular and appeared on both
@@ -45,8 +45,8 @@ However, good luck trying to find trends by clicking links and scrupulously comp
 **Color-coded Table**
 
 <div class="fotorama">
-    <img src="http://blog.antoniokov.com/pictures/f1-wiki.png">
-    <img src="http://blog.antoniokov.com/pictures/mls.png">
+    <img src="{{ site.url }}/assets/images/posts/interactive-standings/f1-wiki.png">
+    <img src="{{ site.url }}/assets/images/posts/interactive-standings/mls.png">
 </div>
 
 These tables are [widely used](https://en.wikipedia.org/wiki/2015_Formula_One_season#Results_and_standings) in Formula One world. 
@@ -71,7 +71,7 @@ Creating a replay for any other season requires days or even weeks of work.
 
 **Visualization**
 
-![Tableau Visualization]({{ site.url }}/assets/images/posts/interactive-standings/tableau-viz.png)
+![Tableau Visualization]({{ site.url }}/assets/images/posts/interactive-standings/tableau-premier-league-viz.png)
 
 A simple line chart turns out to be too cluttered even for ten teams so one should look for more creative options. 
 Check out the [ways to reimagine sports standings](https://public.tableau.com/s/blog/2016/08/viz-roundup-reimagining-sports-standings) by Tableau users.
