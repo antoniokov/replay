@@ -19,8 +19,7 @@ How did they manage to climb up?
 
 Static table hadn’t got any answers for me. So I began researching the alternatives.
 
-
-**Form/Streak**
+### Form/Streak
 
 <div class="fotorama">
     <img src="{{ site.url }}/assets/images/posts/interactive-standings/premier-league-form.png">
@@ -33,7 +32,7 @@ Form columns have recently become popular and appeared on both
 They’re useful when a season is on and you’re watching closely but are of no avail after a season’s finished.
 
 
-**Historical Standings**
+### Historical Standings
 
 ![Premier League Table]({{ site.url }}/assets/images/posts/interactive-standings/nba-historical-standings.png)
 
@@ -42,7 +41,7 @@ Okay, so the data is [out there](http://www.basketball-reference.com/friv/standi
 However, good luck trying to find trends by clicking links and scrupulously comparing tables.
 
 
-**Color-coded Table**
+### Color-coded Table
 
 <div class="fotorama">
     <img src="{{ site.url }}/assets/images/posts/interactive-standings/f1-wiki.png">
@@ -57,7 +56,7 @@ But the information density is overwhelming even for 20 races — imagine how th
 Also, there is no way to tell who was at the top after the Belgium GP, Hamilton or Rosberg.
 
 
-**Custom-built System**
+### Custom-built System
 
 ![League Replay]({{ site.url }}/assets/images/posts/interactive-standings/league-replay.png)
 
@@ -69,7 +68,7 @@ There's also a problem from a developer's perspective: systems like this are not
 Creating a replay for any other season requires days or even weeks of work.
 
 
-**Visualization**
+### Visualization
 
 ![Tableau Visualization]({{ site.url }}/assets/images/posts/interactive-standings/tableau-premier-league-viz.png)
 
@@ -79,7 +78,7 @@ Check out the [ways to reimagine sports standings](https://public.tableau.com/s/
 There a few dozens of visualizations out there but none of them is both intuitive and detailed enough to replace a simple standings table.
 
 
-**Animated Standings**
+### Animated Standings
 
 Well, I thought, if plain old standings are that good, 
 why not work on enhancing them instead of inventing some super graphics that only a bunch of dataviz nerds would understand?
@@ -91,7 +90,7 @@ What a great idea! Sure, that's why some guy [coded it in 2011](http://blog.scot
 (Un)fortunately, the script is far from ideal and hasn’t been updated for years.
 
 
-**Replay Table**
+### Replay Table
 
 So I wrote a ~~javascript framework~~ script that transforms season results into interactive standings. Check it out, click replay:
 <div class="replayTable"
@@ -110,7 +109,7 @@ But what about reusability? No problemo, just replace the input file for [any ot
 
 Not into football? Okay, here are Replay Tables for [Formula One](https://replaytable.com/examples/formula-one/2016/) and [NBA](https://replaytable.com/examples/basketball/2015-2016/).
 
-**Quick start**
+### Quick start
 
 1.&nbsp;Begin with a [csv file]({{site.url}}/assets/csv/football/2015-2016/english-premier-league.csv) that looks like this:
 
@@ -178,7 +177,7 @@ You can find one on [Football Data](http://www.football-data.co.uk/data.php) or 
 
 Customizing via `data-` attributes is easy peasy, check out [our docs](https://github.com/TargetProcess/replayTable#customization) for the details.
 
-**License**
+### License
 
 Replay Table is [open-source](https://github.com/TargetProcess/replayTable) with MIT license. It is free for any website.
 
