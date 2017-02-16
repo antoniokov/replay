@@ -10,17 +10,14 @@ Goals for, goals against, goals difference
 
 Terms
 
-New Jekyll-based website with more examples. Code is no more shared. Old embeds don't work
+* New Jekyll-based website with more examples. Code is no more shared. Old embeds don't work
 
-Easier to fork: separate components, major code refactoring
+* Easier to fork: separate components, major code refactoring
 
-locationFirst parameter
- 
+* locationFirst parameter
 
+* Layout fixes
 
+* Animation is smooth now
 
-Layout fixes
-
-Animation is smooth now
-
-Ignore last empty string in csv
+* Ignore last empty string in csv

@@ -34,9 +34,7 @@ They’re useful when a season is on and you’re watching closely but are of no
 
 ![Premier League Table]({{ site.url }}/assets/images/posts/interactive-standings/nba-historical-standings.png)
 
-Okay, so the data is [out there](http://www.basketball-reference.com/friv/standings.cgi?month=2&day=2&year=1990&lg_id=NBA) in the world!
-
-However, good luck trying to find trends by clicking links and scrupulously comparing tables.
+Okay, so the data is [out there](http://www.basketball-reference.com/friv/standings.cgi?month=2&day=2&year=1990&lg_id=NBA) in the world! However, good luck trying to find trends by clicking links and scrupulously comparing tables.
 
 
 ### Color-coded Table
@@ -46,12 +44,7 @@ However, good luck trying to find trends by clicking links and scrupulously comp
     <img src="{{ site.url }}/assets/images/posts/interactive-standings/mls.png">
 </div>
 
-These tables are [widely used](https://en.wikipedia.org/wiki/2015_Formula_One_season#Results_and_standings) in Formula One world. 
-They allow to learn information at your pace and drill down to a particular race.
-
-But the information density is overwhelming even for 20 races — imagine how this table would look like for a season with 38 stages.
-
-Also, there is no way to tell who was at the top after the Belgium GP, Hamilton or Rosberg.
+These tables are [widely used](https://en.wikipedia.org/wiki/2015_Formula_One_season#Results_and_standings) in Formula One world. They allow to learn information at your pace and drill down to a particular race. But the information density is overwhelming even for 20 races — imagine how this table would look like for a season with 38 stages. Also, there is no way to tell who was at the top after the Belgium GP, Hamilton or Rosberg.
 
 
 ### Custom-built System
@@ -101,17 +94,13 @@ So I wrote a ~~javascript framework~~ script that transforms season results into
 
 Play around, drill down to round and team levels.
 
-Oh yeah. All the data right inside a plain old standings table.
-
-But what about reusability? No problemo, just replace the input file for [any other football league](https://replaytable.com/examples/football/2015-2016/).
-
-Not into football? Okay, here are Replay Tables for [Formula One](https://replaytable.com/examples/formula-one/2016/) and [NBA](https://replaytable.com/examples/basketball/2015-2016/).
+Oh yeah. All the data right inside a plain old standings table. But what about reusability? No problemo, just replace the input file for [any other football league](https://replaytable.com/examples/football/2015-2016/). Not into football? Okay, here are Replay Tables for [Formula One](https://replaytable.com/examples/formula-one/2016/) and [NBA](https://replaytable.com/examples/basketball/2015-2016/).
 
 ### Quick start
 
 1.&nbsp;Begin with a [csv file]({{site.url}}/assets/csv/football/2015-2016/english-premier-league.csv) that looks like this:
 
-<table> 
+<table class="">
     <colgroup><col/> <col/> <col/> <col/> <col/></colgroup>
     <tbody> 
         <tr> 
@@ -165,7 +154,8 @@ You can find one on [Football Data](http://www.football-data.co.uk/data.php) or 
         <script type="text/javascript" src="//cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
     </body>
     {% endhighlight %}
-3.&nbsp;Place a `div` with `replayTable` class on your page and supply a link to the csv file using data-csv attribute:
+
+3.&nbsp;Place a <span class="code-word">div</span> with <span class="code-word">replayTable</span>  class on your page and supply a link to the csv file using data-csv attribute:
     {% highlight html %}
     <div class="replayTable"
         data-csv="/path/to/file.csv">
@@ -176,16 +166,15 @@ You can find one on [Football Data](http://www.football-data.co.uk/data.php) or 
     {% endhighlight %}   
 4.&nbsp;Enjoy!
 
-Customizing via `data-` attributes is easy peasy, check out [our docs](https://github.com/TargetProcess/replayTable#customization) for the details.
+Customizing via <span class="code-word">data-</span> attributes is easy peasy, check out [our docs](https://github.com/TargetProcess/replayTable#customization) for the details.
 
 ### License
 
 Replay Table is [open-source](https://github.com/TargetProcess/replayTable) with MIT license. It is free for any website.
-
+<br>
 Feel free to write me via [@antoniokov](https://twitter.com/antoniokov) or [anton.iokov@targetprocess.com](mailto:anton.iokov@targetprocess.com) 
 in case you need help integrating Replay Table into your website.
- 
-Thanks to [Daria Krupenkina](https://github.com/dariaK) for the styles.
+<br>Thanks to [Daria Krupenkina](https://github.com/dariaK) for the styles.
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
