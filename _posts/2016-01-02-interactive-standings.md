@@ -159,8 +159,6 @@ You can find one on [Football Data](http://www.football-data.co.uk/data.php) or 
     {% highlight html %}
     <div class="replayTable"
         data-csv="/path/to/file.csv">
-        data-input-type="listOfMatches"
-        data-item-name="Team"
         data-use-rounds-numbers="true"
     </div>
     {% endhighlight %}   
