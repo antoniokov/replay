@@ -4,8 +4,6 @@ title: "Interactive Standings"
 date: 2016-02-13T19:00:00Z
 categories: main
 ---
-# Interactive Standings
-
 It started with me looking at Premier League table and asking questions:
 
 * Did Leicester took the lead from the begining or was it a heroic finish that brought the victory?
@@ -170,7 +168,10 @@ You can find one on [Football Data](http://www.football-data.co.uk/data.php) or 
 3.&nbsp;Place a `div` with `replayTable` class on your page and supply a link to the csv file using data-csv attribute:
     {% highlight html %}
     <div class="replayTable"
-         data-csv="/path/to/file.csv">
+        data-csv="/path/to/file.csv">
+        data-input-type="listOfMatches"
+        data-item-name="Team"
+        data-use-rounds-numbers="true"
     </div>
     {% endhighlight %}   
 4.&nbsp;Enjoy!
