@@ -5,16 +5,13 @@ title: "Российская Премьер-лига"
 tags: [football, requests]
 sport-order: 1
 csv-size: 6
-width: 300
-height: 670
+width: 443
+height: 573
 ---
 <div class="replayTable"
      data-csv="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
      data-input-type="listOfMatches"
-     data-season-name="Сезон"
-     data-round-name="Тур"
-     data-item-name="Команда"
-     data-total-name="Очки"
+     data-terms="{ 'season': 'Сезон', 'round': 'Тур', 'item': 'Команда', 'total': 'Очки' }"
      data-use-rounds-numbers="true"
      data-calculated-columns="{'rounds': 'И', 'wins': 'В', 'draws': 'Н', 'losses': 'П'}"
      data-rounds-total-number="30"
