@@ -493,6 +493,12 @@ body > footer form > a{
     margin-bottom: 5rem;
     margin-left: -2.5%;
 }
+.post-wrap .title .date{
+    display: block;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.5);
+    padding-left: 2px;
+}
 .post-wrap .post.single h1{
     text-align: left;
     font-family: 'Roboto';
