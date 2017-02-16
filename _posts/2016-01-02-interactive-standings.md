@@ -168,11 +168,10 @@ Customizing via <span class="code-word">data-</span> attributes is easy peasy, c
 
 ### License
 
-Replay Table is [open-source](https://github.com/TargetProcess/replayTable) with MIT license. It is free for any website.
-<br>
-Feel free to write me via [@antoniokov](https://twitter.com/antoniokov) or [anton.iokov@targetprocess.com](mailto:anton.iokov@targetprocess.com) 
+Replay Table is [open-source](https://github.com/TargetProcess/replayTable) with MIT license. It is free for any website.<br>
+The project is developed by Anton Iokov and Daria Krupenkina during the [orange time](http://www.openwork.org/targetprocess/) at [Targetprocess](https://www.targetprocess.com/).<br>
+Feel free to write to [@antoniokov](https://twitter.com/antoniokov) or [anton.iokov@targetprocess.com](mailto:anton.iokov@targetprocess.com) 
 in case you need help integrating Replay Table into your website.
-<br>Thanks to [Daria Krupenkina](https://github.com/dariaK) for the styles.
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>

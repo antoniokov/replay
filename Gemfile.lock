@@ -41,6 +41,7 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.23)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
@@ -50,9 +51,10 @@ DEPENDENCIES
   jekyll (= 3.3.1)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
+  wdm (~> 0.1.0)
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.2.6p396
 
 BUNDLED WITH
    1.13.7
