@@ -128,11 +128,11 @@ p a:hover{
 }
 .about .side:first-of-type{
     padding-right: 6rem;
-    width: 40%;
+    width: 45%;
 }
 .about .side:last-of-type{
     padding-left: 6rem;
-    width: 60%;
+    width: 55%;
 }
 .about .replay-table-wrap{
     float: none;
@@ -310,11 +310,11 @@ code,
 }
 .examples .side:first-of-type{
     padding-right: 6rem;
-    width: 40%;
+    width: 45%;
 }
 .examples .side:last-of-type{
     padding-left: 6rem;
-    width: 60%;
+    width: 55%;
 }
 
 .examples .side p{
