@@ -301,6 +301,7 @@ code,
     border-bottom: none;
 }
 .examples .side{
+    width: 50%;
     float: left;
     display: block;
     vertical-align: top;
@@ -310,11 +311,11 @@ code,
 }
 .examples .side:first-of-type{
     padding-right: 6rem;
-    width: 45%;
+    /*width: 50%;*/
 }
 .examples .side:last-of-type{
     padding-left: 6rem;
-    width: 55%;
+    /*width: 55%;*/
 }
 
 .examples .side p{
@@ -381,6 +382,9 @@ code,
 }
 .examples  a.category:hover{
     border-bottom-color: #e61578;
+}
+.examples .r-table.matches td.score{
+    white-space: nowrap;
 }
 .highlight{
     padding: 0;
