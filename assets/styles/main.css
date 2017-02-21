@@ -123,16 +123,16 @@ p a:hover{
     clear: both;
 }
 .about .side{
-    float: left;
+
 
 }
 .about .side:first-of-type{
-    padding-right: 6rem;
-    width: 45%;
+    margin-right: 7rem;
+    float: left;
 }
 .about .side:last-of-type{
-    padding-left: 6rem;
-    width: 55%;
+    padding-left: 5rem;
+    overflow: hidden;
 }
 .about .replay-table-wrap{
     float: none;
@@ -301,8 +301,7 @@ code,
     border-bottom: none;
 }
 .examples .side{
-    width: 50%;
-    float: left;
+
     display: block;
     vertical-align: top;
     -webkit-box-sizing: border-box;
@@ -310,12 +309,11 @@ code,
     box-sizing: border-box;
 }
 .examples .side:first-of-type{
-    padding-right: 6rem;
-    /*width: 50%;*/
+    margin-right: 12rem;
+    float: left;
 }
 .examples .side:last-of-type{
-    padding-left: 6rem;
-    /*width: 55%;*/
+    overflow: hidden;
 }
 
 .examples .side p{
