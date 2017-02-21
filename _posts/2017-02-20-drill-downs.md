@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Replay Table 0.2 is out!"
-date: 2016-02-12T19:00:00Z
+date: 2017-02-20T19:00:00Z
 categories: release-notes
 ---
 Drilldown to matches and teams + modes

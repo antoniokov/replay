@@ -33,6 +33,7 @@ collections:
     output: true
   posts:
     output: true
+    permalink: /blog/:title
 
 defaults:
   -

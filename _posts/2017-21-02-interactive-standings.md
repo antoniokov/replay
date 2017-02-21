@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Interactive Standings"
-date: 2016-02-13T19:00:00Z
+date: 2017-02-21T06:00:00Z
 categories: main
 ---
 It started with me looking at Premier League table and asking questions:
@@ -159,7 +159,6 @@ You can find one on [Football Data](http://www.football-data.co.uk/data.php) or 
     {% highlight html %}
     <div class="replayTable"
         data-csv="/path/to/file.csv">
-        data-use-rounds-numbers="true"
     </div>
     {% endhighlight %}   
 4.&nbsp;Enjoy!
@@ -169,7 +168,7 @@ Customizing via <span class="code-word">data-</span> attributes is easy peasy, c
 ### License
 
 Replay Table is [open-source](https://github.com/TargetProcess/replayTable) with MIT license. It is free for any website.<br>
-The project is developed by Anton Iokov and Daria Krupenkina during the [orange time](http://www.openwork.org/targetprocess/) at [Targetprocess](https://www.targetprocess.com/).<br>
+The project is developed by me (Anton Iokov) and Daria Krupenkina using the [orange time](http://www.openwork.org/targetprocess/) at [Targetprocess](https://www.targetprocess.com/).<br>
 Feel free to write to [@antoniokov](https://twitter.com/antoniokov) or [anton.iokov@targetprocess.com](mailto:anton.iokov@targetprocess.com) 
 in case you need help integrating Replay Table into your website.
 
