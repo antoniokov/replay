@@ -1,1 +1,5 @@
-<script type="text/javascript" src="https://cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
+{% if jekyll.environment == "development" %}
+<script type="text/javascript" src="{{ site.script_dev }}"></script>
+{% else %}
+<script type="text/javascript" src="{{ site.script_prod }}"></script>
+{% endif %}

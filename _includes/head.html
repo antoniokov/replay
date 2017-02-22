@@ -4,7 +4,7 @@
 <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{{ default: site.description }}">
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/replay-table/latest/replay-table.css">
+{% include css.html %}
 
 {% if page.layout != "table" %}
     <link rel="stylesheet" type="text/css" href="/assets/styles/main.css">

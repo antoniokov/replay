@@ -1,0 +1,5 @@
+{% if jekyll.environment == "development" %}
+<link rel="stylesheet" type="text/css" href="{{ site.css_dev }}">
+{% else %}
+<link rel="stylesheet" type="text/css" href="{{ site.css_prod }}">
+{% endif %}

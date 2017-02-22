@@ -20,6 +20,11 @@ description: >
 baseurl: ""
 url: "https://replaytable.com"
 
+script_prod: "//cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"
+css_prod: "//cdn.jsdelivr.net/replay-table/latest/replay-table.css"
+script_dev: "https://rawgit.com/TargetProcess/replayTable/master/dist/replay-table.min.js"
+css_dev: "https://rawgit.com/TargetProcess/replayTable/master/dist/replay-table.css"
+
 # Build settings
 encoding: utf-8
 highlighter: rouge
