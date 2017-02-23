@@ -489,7 +489,9 @@ body > footer form > a{
     border-bottom: none;
     padding-bottom: 0;
 }
-.post-wrap .post{}
+.post-wrap .post{
+    max-width: 94rem;
+}
 .post-wrap .title{
     font-size: 4.6rem;
     margin-bottom: 5rem;
