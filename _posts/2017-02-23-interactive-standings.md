@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Interactive Standings"
-date: 2017-02-21T06:00:00Z
+date: 2017-02-23T06:00:00Z
 categories: main
 ---
 It started with me looking at Premier League table and asking questions:
