@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 <head>
-    {% include head.html %}
+{% include head.html %}
 </head>
+
 <body>
     {% assign orderBy = page.orderBy | default: "name" %}
     {% assign sortedTables = site.tables | sort: orderBy %}

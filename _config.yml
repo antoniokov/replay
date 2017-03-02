@@ -13,10 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Replay Table
+title: Replay Table. Interactive season standings
 lang: en
-description: >
-  A script that transforms a csv file with season results into interactive standings.
+description: A script that transforms a csv file with season results into interactive standings.
 baseurl: ""
 url: "https://replaytable.com"
 
