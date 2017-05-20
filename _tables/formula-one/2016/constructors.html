@@ -10,10 +10,8 @@ csv-size: 1
 width: 465
 height: 687
 ---
-<div class="replayTable"
-    data-csv="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
-    data-preset="F1"
-    data-show-change-during-animation="true"
-    data-item-name="Team"
-    data-table-name="{{ page.name }}">
+<div class="replayTable" id="replay-{{ page.name }}"
+    data-source="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
+    data-preset="f1"
+    data-labels="#,Team,Points">
 </div>

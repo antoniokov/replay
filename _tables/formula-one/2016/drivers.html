@@ -12,9 +12,10 @@ csv-size: 2
 width: 465
 height: 687
 ---
-<div class="replayTable"
-    data-csv="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
-    data-preset="F1"
+<div class="replayTable" id="replay-{{ page.name }}"
+    data-source="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
+    data-preset="f1"
     data-extra-columns-number="1"
-    data-table-name="{{ page.name }}">
+    data-columns="position,item,Team,points,points.change"
+    data-labels="#,Driver,Team,Points, ">
 </div>
