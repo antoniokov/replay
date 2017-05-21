@@ -2,10 +2,32 @@
 <html lang="{{ site.lang }}">
 <head>
 {% include head.html %}
+<script src="{{ site.url }}/assets/scripts/likely.js"></script>
+<link rel="stylesheet" href="{{ site.url }}/assets/styles/likely.css">
 </head>
 
 <body>
+{% include header.html %}
+
+<div class="contents">
+    <ul class="contents-list">
+        {% for linked-table in site.tables %}
+        {% if linked-table.sport == page.sport and linked-table.season == page.season %}
+        <li class="contents-item">
+            {% if linked-table.name == page.name %}
+            <a class="active" href="{{ page.url | replace: page.name, linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+            {% else %}
+            <a href="{{ page.url | replace: page.name, linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+            {% endif %}
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
 {{ content }}
+
+{% include likely.html %}
 
 <script type="text/javascript">replayTable.magic()</script>
 </body>

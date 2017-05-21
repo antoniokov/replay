@@ -4,18 +4,20 @@ name: "formula-one-drivers"
 title: "Formula One Driver Standings"
 sport-title: "Driver Standings"
 tags: [main, formula-one, non-team, 2016]
+season: 2016
 sport: Formula One
 season: 2016
+data-format: csv
 sport-order: 2
 order: 1
 csv-size: 2
 width: 465
 height: 687
 ---
-<div class="replayTable" id="replay-{{ page.name }}"
-    data-source="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
+<div class="replayTable" id="replay-{{ page.name }}-{{ page.season }}"
+    data-source="{{ page.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' }}"
     data-preset="f1"
     data-extra-columns-number="1"
     data-columns="position,item,Team,points,points.change"
-    data-labels="#,Driver,Team,Points, ">
+    data-labels="#,Driver,Team,Points">
 </div>

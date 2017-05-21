@@ -85,7 +85,7 @@ What a great idea! Sure, that's why some guy [coded it in 2011](http://blog.scot
 
 So I wrote a ~~javascript framework~~ script that transforms season results into interactive standings. Check it out, click replay:
 <div class="replayTable"
-    data-csv="{{site.url}}/assets/csv/football/2015-2016/english-premier-league.csv"
+    data-csv="{{site.url}}/assets/data/football/2015-2016/english-premier-league.csv"
     data-input-type="listOfMatches"
     data-item-name="Team"
     data-use-rounds-numbers="true"
@@ -98,7 +98,7 @@ Oh yeah. All the data right inside a plain old standings table. But what about r
 
 ### Quick start
 
-1.&nbsp;Begin with a [csv file]({{site.url}}/assets/csv/football/2015-2016/english-premier-league.csv) that looks like this:
+1.&nbsp;Begin with a [csv file]({{site.url}}/assets/data/football/2015-2016/english-premier-league.csv) that looks like this:
 
 <table class="">
     <colgroup><col/> <col/> <col/> <col/> <col/></colgroup>

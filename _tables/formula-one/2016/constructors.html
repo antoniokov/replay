@@ -4,14 +4,17 @@ name: "formula-one-constructors"
 title: "Formula One Constructor Standings"
 sport-title: "Constructor Standings"
 tags: [formula-one, non-team, 2016]
+season: 2016
+sport: Formula One
 sport-order: 2
+data-format: csv
 order: 2
 csv-size: 1
 width: 465
 height: 687
 ---
 <div class="replayTable" id="replay-{{ page.name }}"
-    data-source="{{ page.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' }}"
+    data-source="{{ page.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' }}"
     data-preset="f1"
     data-labels="#,Team,Points">
 </div>

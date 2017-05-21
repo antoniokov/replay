@@ -11,7 +11,8 @@ tags: [main]
     <div class="side">
         <div class="main-demo">
             <div class="replayTable" id="demo"
-                 data-source="/assets/csv/football/2015-2016/english-premier-league.csv"
+                 data-source="/assets/data/football/2016-2017/english-premier-league.json"
+                 data-format="football-data.org"
                  data-visualizer="sparklines">
             </div>
         </div>
@@ -21,38 +22,39 @@ tags: [main]
         <div class="howto">
             <p>
                 <span class="step-num">1</span>
-                Prepare a <a target="_blank" href="https://github.com/TargetProcess/replayTable#input">csv file</a> with season results or download one from our <a href="https://targetprocess.github.io/replayTable/#examples">examples</a>.
+                Prepare an <a target="_blank" href="https://github.com/TargetProcess/replayTable#input">input file</a> with season results or download one from our <a href="https://targetprocess.github.io/replayTable/#examples">examples</a>.
             </p>
 
             <br/>
 
             <p>
                 <span class="step-num">2</span>
-                Put a <span class="code-word">div</span> with <span class="code-word">replayTable</span> class on your page and supply a link to the csv file using <span class="code-word">data-csv</span> attribute:
+                Put a <span class="code-word">div</span> with <span class="code-word">replayTable</span> class on your page and supply a link to the input file using <span class="code-word">data-source</span> attribute:
             </p>
 
 {% highlight html %}
 <div class="replayTable"
-     data-csv="/path/to/file.csv">
+     data-source="/path/to/file.csv">
 </div>
 {% endhighlight %}
 
             <p>
                 <span class="step-num">3</span>
-                Finally, include Replay Table script and stylesheet:
+                Include D3.js and Replay Table scripts and the stylesheet. Apply some magic to the body:
             </p>
 
 {% highlight html %}
 <head>
     ...
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/replay-table/latest/replay-table.css">
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/replay-table/dist/replay-table.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/replay-table/dist/replay-table.css">
 </head>
 <body>
-...
-<script type="text/javascript" src="//cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
+    ...
+    <script type="text/javascript">replayTable.magic()</script>
 </body>
 {% endhighlight %}
-
 
             <p>
                 The table is highly customizable via <span class="code-word">data-</span> attributes. Check out our <a target="_blank" href="https://github.com/TargetProcess/replayTable#customization">docs</a>.
@@ -68,8 +70,24 @@ tags: [main]
     {% assign sortedTables = site.tables | sort: "sport-order" %}
     {% for table in sortedTables %}
         {% if table.tags contains "main" %}
-        <a class="category" href="examples/{{ table.sport | replace: ' ', '-' | downcase}}/{{ table.season | default: "2015-2016" }}">{{ table.sport }}</a>
-        <h3><a href="#{{ table.name }}" id="{{ table.name }}" name="{{ table.name }}"></a>{{ table.title }}</h3>
+        <h3 class="category">{{ table.sport }}</h3>
+
+    <div class="contents">
+        <ul class="contents-list">
+    {% for linked-table in site.tables %}
+        {% if linked-table.sport == table.sport and linked-table.season == table.season %}
+        <li class="contents-item">
+            {% if linked-table.name == table.name %}
+                <a class="active" href="{{ site.url }}/examples/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+            {% else %}
+                <a href="{{ site.url }}/examples/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+            {% endif %}
+        </li>
+        {% endif %}
+    {% endfor %}
+
+        </ul>
+    </div>
 
         <div class="two-side-content">
             <div class="side">
@@ -80,18 +98,8 @@ tags: [main]
 {% highlight html %}
 {{ table.content }}
 {% endhighlight %}
-                <p><a href="{{ table.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' | prepend: site.url }}">Download CSV ({{ table.csv-size }} KB)</a></p>
+                <p><a href="{{ table.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' | prepend: site.url }}">Download {{ table.data-format | upcase }}</a></p>
 
-                <h4 class="side-head">Embed</h4>
-{% highlight html %}
-<iframe
-        src="{{ table.url | prepend:site.url }}"
-        frameBorder="0"
-        scrolling="no"
-        width="{{ table.width }}"
-        height="{{ table.height }}">
-</iframe>
-{% endhighlight %}
             </div>
         </div>
         {% endif %}

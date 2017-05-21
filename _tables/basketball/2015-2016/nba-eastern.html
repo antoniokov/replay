@@ -3,13 +3,16 @@ layout: "table"
 name: "nba-eastern"
 title: "NBA Eastern Conference"
 tags: [north-america, basketball, 2015-2016]
+season: 2015-2016
+sport: Basketball
 sport-order: 3
+data-format: csv
 csv-size: 70
 width: 700
 height: 2394
 ---
 <div class="replayTable" id="replay-{{ page.name }}"
-     data-source="{{ page.url | replace: "tables", "assets/csv" | replace: ".html",".csv" }}"
+     data-source="{{ page.url | replace: "tables", "assets/data" | replace: ".html",".csv" }}"
      data-preset="winLoss"
      data-insert-start-round="Start"
      data-filter-items="Atlanta Hawks,Chicago Bulls,Boston Celtics,Brooklyn Nets,Detroit Pistons,Miami Heat,Milwaukee Bucks,Orlando Magic,Toronto Raptors,Indiana Pacers,New York Knicks,Cleveland Cavaliers,Philadelphia 76ers,Washington Wizards,Charlotte Hornets"

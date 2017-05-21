@@ -248,19 +248,19 @@ code,
     margin-bottom: 5rem;
     padding: 0;
 }
-.examples ul > li{
+.contents ul > li{
     display: inline-block;
     margin-bottom: 1rem;
     margin-right: 2rem;
     /*padding: 0.5rem 1rem;*/
 }
-.examples ul > li > ul {
+.contents ul > li > ul {
     padding-left: 2rem;
     padding-top: 0.8rem;
     padding-bottom: 0.2rem;
 }
 
-.examples ul > li a{
+.contents ul > li a{
     text-decoration: none;
     border-bottom: 1px solid;
 }
@@ -365,7 +365,7 @@ code,
     opacity: 0.6;
 }
 
-.examples  a.category{
+.examples h3.category{
     margin-bottom: 3.5rem;
     white-space: nowrap;
     background: none;
@@ -377,9 +377,6 @@ code,
     color: #e61578;
     border-bottom: 1px solid transparent;
     text-decoration: none;
-}
-.examples  a.category:hover{
-    border-bottom-color: #e61578;
 }
 .examples .r-table.matches td.score{
     white-space: nowrap;
@@ -566,7 +563,9 @@ body > footer form > a{
 }
 
 
-
+.contents-item a.active {
+    color: #e61578;
+}
 
 
 

@@ -33,18 +33,8 @@
 {% highlight html %}
 {{ table.content }}
 {% endhighlight %}
-                <p><a href="{{ table.url | replace: 'tables', 'assets/csv' | replace: '.html','.csv' | prepend: site.url }}">Download CSV ({{ table.csv-size }} KB)</a></p>
+                <p><a href="{{ table.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' | prepend: site.url }}">Download CSV</a></p>
 
-                <h4 class="side-head">Embed</h4>
-{% highlight html %}
-<iframe
-        src="{{ table.url | prepend:site.url }}"
-        frameBorder="0"
-        scrolling="no"
-        width="{{ table.width }}"
-        height="{{ table.height }}">
-</iframe>
-{% endhighlight %}
             </div>
         </div>
         {% endif %}
