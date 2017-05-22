@@ -8,13 +8,6 @@ ul{margin:0;padding:0;list-style:none;}
 table,th,td{vertical-align:middle;border-collapse:collapse;border-spacing:0;margin:0;padding:0;}
 caption, th{text-align:left;font-weight: normal;}
 section,article,aside,figure,footer,header,hgroup,nav {display: block;}
-header,
-section,
-div{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 
 @font-face {
@@ -47,10 +40,10 @@ html{
 
 body {
     margin: 0;
-    padding: 5rem 10%;
+    padding: 5rem 5%;
     font-size: 1.4rem;
     min-width: 1200px;
-    font-family: 'helvetica', 'arial', sans-serif;
+    font-family:  'arial', sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -117,23 +110,25 @@ p a:hover{
 .about{
     margin-bottom: 6rem;
 }
+.about .side:after,
 .about:after{
     content: '';
     display: block;
     clear: both;
 }
-.about .side{
-
-
-}
+.about .side{}
 .about .side:first-of-type{
-    margin-right: 7rem;
-    float: left;
+    margin: 0 auto 5rem;
+    float: none;
 }
 .about .side:last-of-type{
-    padding-left: 5rem;
+    padding-left: 3rem;
+    margin-left: -3rem;
     overflow: hidden;
 }
+
+.about .side .item{}
+
 .about .replay-table-wrap{
     float: none;
 }
@@ -345,9 +340,7 @@ code,
     height: calc(100% - 5rem);
 }
 
-.examples .replayTable table{
-    width: 100% !important;
-}
+
 .examples .replayTable .replay-table-wrap{
     float: none;
 }
@@ -566,7 +559,14 @@ body > footer form > a{
 .contents-item a.active {
     color: #e61578;
 }
-
-
-
+.contents{
+    margin-bottom: 3rem;
+}
+.replayTable{
+    float: none;
+}
+.replayTable + .likely{
+    display: block;
+    margin-bottom: 5rem;
+}
 
