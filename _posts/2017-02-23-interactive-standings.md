@@ -83,9 +83,9 @@ What a great idea! Sure, that's why some guy [coded it in 2011](http://blog.scot
 
 ### Replay Table
 
-So I wrote a ~~javascript framework~~ script that transforms season results into interactive standings. Check it out, click replay:
+So I wrote a ~~javascript framework~~ library that transforms season results into interactive standings. Check it out, click replay:
 <div class="replayTable" id="replay-english-premier-league"
-     data-source="{{ site.url }}/assets/data/football/2016-207/english-premier-league.json"
+     data-source="{{ site.url }}/assets/data/football/2016-2017/english-premier-league.json "
      data-format="football-data.org"
      data-visualizer="sparklines">
 </div>
