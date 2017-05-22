@@ -6,7 +6,7 @@ a img{border:none;}
 h1,h2,h3,h4,h5,h6{margin:0;}
 ul{margin:0;padding:0;list-style:none;}
 table,th,td{vertical-align:middle;border-collapse:collapse;border-spacing:0;margin:0;padding:0;}
-caption, th{text-align:left;font-weight: normal;}
+caption, th{text-align:left;}
 section,article,aside,figure,footer,header,hgroup,nav {display: block;}
 
 
