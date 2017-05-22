@@ -78,9 +78,9 @@ tags: [main]
         {% if linked-table.sport == table.sport and linked-table.season == table.season %}
         <li class="contents-item">
             {% if linked-table.name == table.name %}
-                <a class="active" href="{{ site.url }}/examples/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+                <a class="active" href="{{ site.url }}/tables/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
             {% else %}
-                <a href="{{ site.url }}/examples/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+                <a href="{{ site.url }}/tables/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
             {% endif %}
         </li>
         {% endif %}

@@ -365,7 +365,7 @@ code,
     opacity: 0.6;
 }
 
-.examples h3.category{
+h3.category{
     margin-bottom: 3.5rem;
     white-space: nowrap;
     background: none;
