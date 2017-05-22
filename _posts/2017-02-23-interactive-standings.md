@@ -84,17 +84,15 @@ What a great idea! Sure, that's why some guy [coded it in 2011](http://blog.scot
 ### Replay Table
 
 So I wrote a ~~javascript framework~~ script that transforms season results into interactive standings. Check it out, click replay:
-<div class="replayTable"
-    data-csv="{{site.url}}/assets/data/football/2015-2016/english-premier-league.csv"
-    data-input-type="listOfMatches"
-    data-item-name="Team"
-    data-use-rounds-numbers="true"
-    data-table-name="english-premier-league">
+<div class="replayTable" id="replay-english-premier-league"
+     data-source="{{ site.url }}/assets/data/football/2016-207/english-premier-league.json"
+     data-format="football-data.org"
+     data-visualizer="sparklines">
 </div>
 
-Play around, drill down to round and team levels.
+Play around, drill down to item level. Oh yeah.
 
-Oh yeah. All the data right inside a plain old standings table. But what about reusability? No problemo, just replace the input file for [any other football league](https://replaytable.com/examples/football/2015-2016/). Not into football? Okay, here are Replay Tables for [Formula One](https://replaytable.com/examples/formula-one/2016/) and [NBA](https://replaytable.com/examples/basketball/2015-2016/).
+But what about reusability? No problemo, just replace the input file for [any other football league](https://replaytable.com#football). Not into football? Okay, here are Replay Tables for [Formula One](https://replaytable.com#formula-one) and [NBA](https://replaytable.com#basketball).
 
 ### Quick start
 
@@ -104,28 +102,28 @@ Oh yeah. All the data right inside a plain old standings table. But what about r
     <colgroup><col/> <col/> <col/> <col/> <col/></colgroup>
     <tbody> 
         <tr> 
-            <td>Date</td>
+            <td>Match Week</td>
             <td>Home Team</td>
             <td>Score</td>
             <td>Away Team</td>
             <td>Score</td>
         </tr>
         <tr> 
-            <td>08.08.2015</td>
+            <td>1</td>
             <td>Bournemouth</td>
             <td>0</td>
             <td>Aston Villa</td>
             <td>1</td>
         </tr>
         <tr> 
-            <td>08.08.2015</td>
+            <td>1</td>
             <td>Chelsea</td>
             <td>2</td>
             <td>Swansea</td>
             <td>2</td>
         </tr>
         <tr> 
-            <td>08.08.2015</td>
+            <td>1</td>
             <td>Everton</td>
             <td>2</td>
             <td>Watford</td>
@@ -143,22 +141,24 @@ Oh yeah. All the data right inside a plain old standings table. But what about r
  
 You can find one on [Football Data](http://www.football-data.co.uk/data.php) or in [our gallery](https://replaytable.com/#examples).
      
-2.&nbsp;Include Replay Table script and stylesheet:
+2.&nbsp;Include D3.js and Replay Table scripts and the stylesheet. Apply some magic to the body:
     {% highlight html %}
     <head>
         ...
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/replay-table/latest/replay-table.css">
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/replay-table/dist/replay-table.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/replay-table/dist/replay-table.css">
     </head>
     <body>
         ...
-        <script type="text/javascript" src="//cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
+        <script type="text/javascript">replayTable.magic()</script>
     </body>
     {% endhighlight %}
 
-3.&nbsp;Place a <span class="code-word">div</span> with <span class="code-word">replayTable</span>  class on your page and supply a link to the csv file using data-csv attribute:
+3.&nbsp;Place a <span class="code-word">div</span> with <span class="code-word">replayTable</span>  class on your page and supply a link to the input file using data-source attribute:
     {% highlight html %}
     <div class="replayTable"
-        data-csv="/path/to/file.csv">
+        data-source="/path/to/file.csv">
     </div>
     {% endhighlight %}   
 4.&nbsp;Enjoy!
@@ -171,6 +171,3 @@ Replay Table is [open-source](https://github.com/TargetProcess/replayTable) with
 The project is developed by me (Anton Iokov) and Daria Krupenkina using the [orange time](http://www.openwork.org/targetprocess/) at [Targetprocess](https://www.targetprocess.com/).<br>
 Feel free to write to [@antoniokov](https://twitter.com/antoniokov) or [anton.iokov@targetprocess.com](mailto:anton.iokov@targetprocess.com) 
 in case you need help integrating Replay Table into your website.
-
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/replay-table/latest/replay-table.min.js"></script>
