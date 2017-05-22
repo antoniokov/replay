@@ -20,45 +20,51 @@ tags: [main]
 
     <div class="side">
         <div class="howto">
-            <p>
-                <span class="step-num">1</span>
-                Prepare an <a target="_blank" href="https://github.com/TargetProcess/replayTable#input">input file</a> with season results or download one from our <a href="https://targetprocess.github.io/replayTable/#examples">examples</a>.
-            </p>
+            <div class="item">
+                <p>
+                    <span class="step-num">1</span>
+                    Prepare an <a target="_blank" href="https://github.com/TargetProcess/replayTable#input">input file</a> with season results or download one from our <a href="https://targetprocess.github.io/replayTable/#examples">examples</a>.
+                </p>
 
-            <br/>
+            </div>
 
-            <p>
-                <span class="step-num">2</span>
-                Put a <span class="code-word">div</span> with <span class="code-word">replayTable</span> class on your page and supply a link to the input file using <span class="code-word">data-source</span> attribute:
-            </p>
+            <div class="item">
+                <p>
+                    <span class="step-num">2</span>
+                    Put a <span class="code-word">div</span> with <span class="code-word">replayTable</span> class on your page and supply a link to the input file using <span class="code-word">data-source</span> attribute:
+                </p>
 
-{% highlight html %}
-<div class="replayTable"
-     data-source="/path/to/file.csv">
-</div>
-{% endhighlight %}
+                {% highlight html %}
+                <div class="replayTable"
+                     data-source="/path/to/file.csv">
+                </div>
+                {% endhighlight %}
 
-            <p>
-                <span class="step-num">3</span>
-                Include D3.js and Replay Table scripts and the stylesheet. Apply some magic to the body:
-            </p>
+            </div>
 
-{% highlight html %}
-<head>
-    ...
-    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/replay-table/dist/replay-table.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/replay-table/dist/replay-table.css">
-</head>
-<body>
-    ...
-    <script type="text/javascript">replayTable.magic()</script>
-</body>
-{% endhighlight %}
+            <div class="item">
+                <p>
+                    <span class="step-num">3</span>
+                    Include D3.js and Replay Table scripts and the stylesheet. Apply some magic to the body:
+                </p>
 
-            <p>
-                The library is highly customizable via <span class="code-word">data-</span> attributes. Check out our <a target="_blank" href="https://github.com/TargetProcess/replayTable#customization">docs</a>.
-            </p>
+                {% highlight html %}
+                <head>
+                    ...
+                    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+                    <script type="text/javascript" src="https://unpkg.com/replay-table/dist/replay-table.min.js"></script>
+                    <link rel="stylesheet" type="text/css" href="https://unpkg.com/replay-table/dist/replay-table.css">
+                </head>
+                <body>
+                ...
+                <script type="text/javascript">replayTable.magic()</script>
+                </body>
+                {% endhighlight %}
+
+                <p>
+                    The library is highly customizable via <span class="code-word">data-</span> attributes. Check out our <a target="_blank" href="https://github.com/TargetProcess/replayTable#customization">docs</a>.
+                </p>
+            </div>
 
         </div>
     </div>
