@@ -1,0 +1,17 @@
+---
+layout: "table"
+name: "russian-premier-league"
+title: "Российская премьер-лига"
+tags: [europe, football, 2016-2017]
+season: 2016-2017
+sport: Football
+sport-order: 1
+data-format: csv
+---
+<div class="replayTable" id="replay-{{ page.name }}-{{ page.season }}"
+     data-source="{{ page.url | replace: 'tables', 'assets/data' | replace: 'html', page.data-format }}"
+     data-points-label=""
+     data-all-label="Все"
+     data-short-outcome-labels="{ 'win': 'в.', 'draw': 'н.', 'loss': 'п.' }"
+     data-visualizer="sparklines">
+</div>
