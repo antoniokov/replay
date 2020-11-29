@@ -1,10 +1,10 @@
 To install RVM+Ruby+Jekyll:
-`\curl -sSL https://get.rvm.io | bash`
+`curl -sSL https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer | bash -s stable`
 `source /PATH/TO/RVM`
 `xcode-select --install` (optional)
 `sudo chown -R $(whoami) /usr/local` (optional)
-`rvm install ruby-2.3.3`
-`rvm use ruby-2.3.3`
+`rvm install ruby@latest`
+`rvm use ruby-X.X.X`
 `gem install jekyll`
 `gem install bundle`
 `bundle install`

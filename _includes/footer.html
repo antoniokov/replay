@@ -1,19 +1,6 @@
 <footer>
-    <form action="https://tinyletter.com/replaytable"
-          method="post" target="popupwindow"
-          onsubmit="window.open('https://tinyletter.com/replaytable', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-
-        <p><label for="tlemail">Subscribe to new features, breaking changes and hints (~monthly)</label></p>
-        <p>
-            <input type="text" placeholder="nice@placeholder.com" style="width:140px" name="email" id="tlemail" />
-            <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" />
-        </p>
-
-        <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p>
-    </form>
-
-    <a href="https://github.com/TargetProcess/replayTable">
-        <img src="/assets/images/github.svg" width="40" />
+    <a href="https://github.com/antoniokov/replay-table" target="_blank">
+        <img src="{{ 'assets/images/github.svg' | relative_url }}" width="40" />
     </a>
 
     <script type="text/javascript">replayTable.magic()</script>

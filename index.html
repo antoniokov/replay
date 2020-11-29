@@ -1,6 +1,6 @@
 ---
 layout: "main"
-title: "Replay Table"
+title: "Replay Table — a library for interactive standings"
 tags: [main]
 ---
 <div class="about" id="about-section" name="about-section">
@@ -11,7 +11,7 @@ tags: [main]
     <div class="side">
         <div class="main-demo">
             <div class="replayTable" id="demo"
-                 data-source="/assets/data/football/2016-2017/english-premier-league.json"
+                 data-source="{{ 'assets/data/football/2016-2017/english-premier-league.json' | relative_url }}"
                  data-format="football-data.org"
                  data-order-by="points,goalsDifference,goalsFor"
                  data-visualizer="sparklines">

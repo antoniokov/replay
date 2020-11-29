@@ -17,12 +17,14 @@ title: Replay Table. Interactive season standings
 lang: en
 description: A library for visualizing sport season results with interactive standings.
 baseurl: ""
-url: "https://replaytable.com"
+url: "https://antoniokov.com/replay/"
 
 script_prod: "https://unpkg.com/replay-table/dist/replay-table.min.js"
 css_prod: "https://unpkg.com/replay-table/dist/replay-table.css"
-script_dev: "https://rawgit.com/TargetProcess/replayTable/master/dist/replay-table.min.js"
-css_dev: "https://rawgit.com/TargetProcess/replayTable/master/dist/replay-table.css"
+script_dev: "https://raw.githubusercontent.com/antoniokov/replay-table/master/dist/replay-table.min.js"
+css_dev: "https://raw.githubusercontent.com/antoniokov/replay-table/master/dist/replay-table.css"
+
+repository: "antoniokov/replay"
 
 # Build settings
 encoding: utf-8
