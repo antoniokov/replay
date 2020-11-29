@@ -33,7 +33,7 @@
 {% highlight html %}
 {{ table.content }}
 {% endhighlight %}
-                <p><a href="{{ table.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' | prepend: site.url }}">Download CSV</a></p>
+                <p><a href="{{ table.url | replace: 'tables', 'assets/data' | replace: 'html', table.data-format | relative_url }}">Download {{ table.data-format | upcase }}</a></p>
 
             </div>
         </div>

@@ -24,7 +24,7 @@ tags: [main]
             <div class="item">
                 <p>
                     <span class="step-num">1</span>
-                    Prepare an <a target="_blank" href="https://github.com/TargetProcess/replayTable#input">input file</a> with season results or download one from our <a href="https://targetprocess.github.io/replayTable/#examples">examples</a>.
+                    Prepare an <a target="_blank" href="https://github.com/antoniokov/replay-table#input">input file</a> with season results or download one from our <a href="https://targetprocess.github.io/replayTable/#examples">examples</a>.
                 </p>
 
             </div>
@@ -63,7 +63,7 @@ tags: [main]
                 {% endhighlight %}
 
                 <p>
-                    The library is highly customizable via <span class="code-word">data-</span> attributes. Check out our <a target="_blank" href="https://github.com/TargetProcess/replayTable#customization">docs</a>.
+                    The library is highly customizable via <span class="code-word">data-</span> attributes. Check out our <a target="_blank" href="https://github.com/antoniokov/replay-table#customization">docs</a>.
                 </p>
             </div>
 
@@ -84,10 +84,11 @@ tags: [main]
     {% for linked-table in site.tables %}
         {% if linked-table.sport == table.sport and linked-table.season == table.season %}
         <li class="contents-item">
+            {% assign linked-url = table.sport | replace: ' ', '-' | downcase | prepend: 'tables/' | append: '/' | append: table.season | append: '/' | append: linked-table.name  | relative_url %}
             {% if linked-table.name == table.name %}
-                <a class="active" href="{{ site.url }}/tables/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+                <a class="active" href="{{ linked-url }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
             {% else %}
-                <a href="{{ site.url }}/tables/{{ table.sport | replace: ' ', '-' | downcase }}/{{ table.season }}/{{ linked-table.name }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+                <a href="{{ linked-url }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
             {% endif %}
         </li>
         {% endif %}
@@ -105,7 +106,7 @@ tags: [main]
 {% highlight html %}
 {{ table.content }}
 {% endhighlight %}
-                <p><a href="{{ table.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' | prepend: site.url }}">Download {{ table.data-format | upcase }}</a></p>
+                <p><a href="{{ table.url | replace: 'tables', 'assets/data' | replace: 'html', table.data-format | relative_url }}">Download {{ table.data-format | upcase }}</a></p>
 
             </div>
         </div>

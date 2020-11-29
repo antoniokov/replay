@@ -15,7 +15,7 @@ width: 465
 height: 687
 ---
 <div class="replayTable" id="replay-{{ page.name }}-{{ page.season }}"
-    data-source="{{ page.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' }}"
+    data-source="{{ page.url | replace: 'tables', 'assets/data' | replace: '.html','.csv' | relative_url }}"
     data-preset="f1"
     data-extra-columns-number="1"
     data-columns="position,item,Team,points,points.change"

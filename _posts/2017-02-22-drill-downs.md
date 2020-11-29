@@ -26,8 +26,8 @@ This was embarrassing in many ways:
 unnecessary classes in CSS, testing nightmare and messy code...
 
 So we separated the script and the website into 
-[two](https://github.com/TargetProcess/replayTable) 
-[different](https://github.com/TargetProcess/replayTable.com) 
+[two](https://github.com/antoniokov/replay-table) 
+[different](https://github.com/antoniokov/replay-table.com) 
 repositories with independent deployment.
 
 Check our new website out at [replaytable.com](https://replaytable.com/), 
@@ -42,7 +42,7 @@ Note that the table height is no more constant due to the team level drill down.
 We used to have a bunch of parameters like seasonName and roundName to specify terms. 
 But with drill downs came even more labels and it became apparent that there's too much data- params to specify.
      
-So we combined them into one parameter — [terms](https://github.com/TargetProcess/replayTable#terms). 
+So we combined them into one parameter — [terms](https://github.com/antoniokov/replay-table#terms). 
 Specify the terms you need using an object like this: *{ 'round': 'Race', 'item': 'Driver' }*.
 
 **Soon-to-be-breaking change**. The deprecated labelName parameters work for now but we'll get rid of them completely soon.
@@ -52,10 +52,10 @@ Specify the terms you need using an object like this: *{ 'round': 'Race', 'item'
 
 * **Breaking change**. The new default input type is *listOfMatches*.
 
-* New [calculated columns](https://github.com/TargetProcess/replayTable#calculatedcolumns): 
+* New [calculated columns](https://github.com/antoniokov/replay-table#calculatedcolumns): 
 goalsFor, goalsAgainst, goalsDifference.
 
-* [*locationFirst*](https://github.com/TargetProcess/replayTable#locationfirst) parameter 
+* [*locationFirst*](https://github.com/antoniokov/replay-table#locationfirst) parameter 
 for determining the order of home and away teams.
 
 

@@ -32,11 +32,7 @@
 {% include script.html %}
 {% include css.html %}
 
-{% if page.layout != "table" %}
 <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/main.css' | relative_url }}">
 <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/syntax.css' | relative_url }}">
-{% else %}
-<link rel="stylesheet" type="text/css" href="{{ 'assets/styles/table.css' | relative_url }}">
-{% endif %}
 
 {% include google-analytics.html %}
