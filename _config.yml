@@ -16,8 +16,8 @@
 title: Replay Table. Interactive season standings
 lang: en
 description: A library for visualizing sport season results with interactive standings.
-baseurl: ""
-url: "https://antoniokov.com/replay/"
+baseurl: "/replay"
+url: "https://antoniokov.com/replay"
 
 script_prod: "https://unpkg.com/replay-table/dist/replay-table.min.js"
 css_prod: "https://unpkg.com/replay-table/dist/replay-table.css"
