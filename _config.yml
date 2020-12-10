@@ -21,8 +21,8 @@ url: "https://antoniokov.com"
 
 script_prod: "https://unpkg.com/replay-table/dist/replay-table.min.js"
 css_prod: "https://unpkg.com/replay-table/dist/replay-table.css"
-script_dev: "https://raw.githubusercontent.com/antoniokov/replay-table/master/dist/replay-table.min.js"
-css_dev: "https://raw.githubusercontent.com/antoniokov/replay-table/master/dist/replay-table.css"
+script_dev: "https://unpkg.com/replay-table/dist/replay-table.min.js"
+css_dev: "https://unpkg.com/replay-table/dist/replay-table.css"
 
 repository: "antoniokov/replay"
 
