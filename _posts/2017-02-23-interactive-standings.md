@@ -15,15 +15,15 @@ How did they manage to climb up?
 
 * How did the Manchester derbies go?
 
-![Premier League Table]({{ site.url }}/assets/images/posts/interactive-standings/premier-league-table.png)
+![Premier League Table]({{ '/assets/images/posts/interactive-standings/premier-league-table.png' | relative_url }})
 
 The table hadn’t got any answers for me. So I began researching the alternatives.
 
 ### Form/Streak
 
 <div class="fotorama">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/premier-league-form.png">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/nba-streak.png">
+    <img src="{{ '/assets/images/posts/interactive-standings/premier-league-form.png' | relative_url }}">
+    <img src="{{ '/assets/images/posts/interactive-standings/nba-streak.png' | relative_url }}">
 </div>
 
 Form and streak columns help to recap the nearest past and are useful when a season is on and you’re watching closely.
@@ -36,8 +36,8 @@ They have become popular and are now featured on both
 ### Color-coded Table
 
 <div class="fotorama">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/f1-wiki.png">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/mls.png">
+    <img src="{{ '/assets/images/posts/interactive-standings/f1-wiki.png' | relative_url }}">
+    <img src="{{ '/assets/images/posts/interactive-standings/mls.png' | relative_url }}">
 </div>
 
 One way to see the course of the whole season is through a color-coded table.
@@ -51,8 +51,8 @@ Also, there is no way to tell who was at the top after, say, the Belgium GP — 
 ### Historical Standings
 
 <div class="fotorama">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/nba-historical-standings.png">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/russian-premier-league-historical.png">
+    <img src="{{ '/assets/images/posts/interactive-standings/nba-historical-standings.png' | relative_url }}">
+    <img src="{{ '/assets/images/posts/interactive-standings/russian-premier-league-historical.png' | relative_url }}">
 </div>
 
 A true geek can dare to find a trend by comparing standings for a pair of dates.
@@ -66,9 +66,9 @@ waiting for somebody to show it properly.
 ### Standings + Positions History + Results
 
 <div class="fotorama">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/wikipedia-combination-1.png">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/wikipedia-combination-2.png">
-    <img src="{{ site.url }}/assets/images/posts/interactive-standings/wikipedia-combination-3.png">
+    <img src="{{ '/assets/images/posts/interactive-standings/wikipedia-combination-1.png' | relative_url }}">
+    <img src="{{ '/assets/images/posts/interactive-standings/wikipedia-combination-2.png' | relative_url }}">
+    <img src="{{ '/assets/images/posts/interactive-standings/wikipedia-combination-3.png' | relative_url }}">
 </div>
 
 This combination is a standard for ~~soccer~~ football season pages on Wikipedia.
@@ -78,7 +78,7 @@ It has almost no limit for exploration...if you love to scroll and have an infin
 
 ### Custom-built System
 
-![League Replay]({{ site.url }}/assets/images/posts/interactive-standings/league-replay.png)
+![League Replay]({{ '/assets/images/posts/interactive-standings/league-replay.png' | relative_url }})
 
 There is a [true season replay](http://cmoe.dk/leaguereplay/) with video highlights for EVERY game of the English Premier League.Pour a pint and relax in your seat.
 
@@ -90,7 +90,7 @@ Creating a replay for any other season requires days or even weeks of work.
 
 ### Visualization
 
-![Tableau Visualization]({{ site.url }}/assets/images/posts/interactive-standings/tableau-premier-league-viz.png)
+![Tableau Visualization]({{ '/assets/images/posts/interactive-standings/tableau-premier-league-viz.png' | relative_url }})
 
 A plain line chart quickly turns into a mess as the number of teams and rounds increases beyond, so one should look for some creative options. 
 
@@ -106,7 +106,7 @@ why not work on enhancing them instead of inventing some super graphics that onl
 What a great idea! As it always turns out, some ~~asian kid~~ guy [did this in 2011](http://blog.scottlogic.com/2011/01/04/animating-html-ranking-tables-with-javascript.html)
 when nothing was more sexy than JQuery:
 
-![Tableau Visualization]({{ site.url }}/assets/images/posts/interactive-standings/animated-standings.gif)
+![Tableau Visualization]({{ '/assets/images/posts/interactive-standings/animated-standings.gif' | relative_url }})
 
 Unfortunately, the script is far from easy to use and hasn’t been updated for years.
 
@@ -118,7 +118,7 @@ So we teamed up with [Daria](https://github.com/dariak) and [Vitali](https://www
 And today is the day! We're happy to announce Replay Table, the standings of the data era:
 
 <div class="replayTable" id="replay-english-premier-league"
-     data-source="{{ site.url }}/assets/data/football/2016-2017/english-premier-league.json"
+     data-source="{{ '/assets/data/football/2016-2017/english-premier-league.json' | relative_url }}"
      data-format="football-data.org"
      data-order-by="points,goalsDifference,goalsFor"
      data-visualizer="sparklines">
@@ -136,7 +136,7 @@ It has a straightforward declarative interface.
 A table is just a div with replayTable class and a bunch of data- attributes:
 {% highlight html %}
 <div class="replayTable"
-     data-source="{{ site.url }}/assets/data/football/2016-2017/english-premier-league.json"
+     data-source="{{ '/assets/data/football/2016-2017/english-premier-league.json' | relative_url }}"
      data-format="football-data.org"
      data-order-by="points,goalsDifference,goalsFor"
      data-visualizer="sparklines">
@@ -167,7 +167,7 @@ what parameters are available for customization.
 
 But what if you hate those british snobs und wollen den echten Fußball sehen. Kein Problem: 
 <div class="replayTable" id="replay-german-bundesliga"
-     data-source="{{ site.url }}/assets/data/football/2016-2017/german-bundesliga.json"
+     data-source="{{ '/assets/data/football/2016-2017/german-bundesliga.json' | relative_url }}"
      data-format="football-data.org"
      data-order-by="points,goalsDifference,goalsFor"
      data-visualizer="sparklines">
@@ -177,7 +177,7 @@ All you have to do is replace the data-source attribute value with a proper json
 
 Not into chasing a ball? No problemo, here is an Formula One season for you:
 <div class="replayTable" id="replay-formula-one"
-    data-source="{{ site.url }}/assets/data/formula-one/2016/formula-one-drivers.csv"
+    data-source="{{ '/assets/data/formula-one/2016/formula-one-drivers.csv' | relative_url }}"
     data-preset="f1"
     data-extra-columns-number="1"
     data-columns="position,item,Team,points,points.change"
@@ -187,7 +187,7 @@ Not into chasing a ball? No problemo, here is an Formula One season for you:
 The source code looks like this:
 {% highlight html %}
 <div class="replayTable"
-    data-source="{{ site.url }}/assets/data/formula-one/2016/formula-one-drivers.csv"
+    data-source="{{ '/assets/data/formula-one/2016/formula-one-drivers.csv' | relative_url }}"
     data-preset="f1"
     data-extra-columns-number="1"
     data-columns="position,item,Team,points,points.change"
@@ -195,7 +195,7 @@ The source code looks like this:
 </div>
 {% endhighlight %}
 
-We've also made a table for the [NBA season](https://replaytable.com#basketball) to show the flexibility of Replay Table.
+We've also made a table for the [NBA season](https://antoniokov.com/replay#basketball) to show the flexibility of Replay Table.
 
 ### License
 

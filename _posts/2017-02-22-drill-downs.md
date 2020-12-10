@@ -9,13 +9,13 @@ categories: release-notes
 
 Previously it was only possible to see whether a team won or not:
 
-![Premier League changes]({{ site.url }}/assets/images/posts/drill-downs/changes.png)
+![Premier League changes]({{ '/assets/images/posts/drill-downs/changes.png' | relative_url }})
 
 Now you can drill down to matches and teams:
 
 <div class="fotorama">
-    <img src="{{ site.url }}/assets/images/posts/drill-downs/drilldown.png">
-    <img src="{{ site.url }}/assets/images/posts/drill-downs/team-drilldown.png">
+    <img src="{{ '/assets/images/posts/drill-downs/drilldown.png' | relative_url }}">
+    <img src="{{ '/assets/images/posts/drill-downs/team-drilldown.png' | relative_url }}">
 </div>
 
 ### New Website
@@ -27,10 +27,10 @@ unnecessary classes in CSS, testing nightmare and messy code...
 
 So we separated the script and the website into 
 [two](https://github.com/antoniokov/replay-table) 
-[different](https://github.com/antoniokov/replay-table.com) 
+[different](https://github.com/antoniokov/replay) 
 repositories with independent deployment.
 
-Check our new website out at [replaytable.com](https://replaytable.com/), 
+Check our new website out at [antoniokov/replay](https://antoniokov.com/replay), 
 you'll find new examples together with their code.
 
 **Breaking change**. The only downside is that old embeds don't work any more. 

@@ -14,9 +14,9 @@
 <div class="contents">
     <ul class="contents-list">
         {% for linked-table in site.tables %}
-        {% if linked-table.sport == page.sport and linked-table.season == page.season and linked-table.name != page.name %}
+        {% if linked-table.sport == page.sport and linked-table.season == page.season and linked-table.name != page.id %}
         <li class="contents-item">
-            <a href="{{ page.url | replace: page.name, linked-table.name | remove: '.html' | relative_url }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
+            <a href="{{ page.url | replace: page.id, linked-table.name | relative_url }}">{{ linked-table.sport-title | default: linked-table.title }}</a>
         </li>
         {% endif %}
         {% endfor %}
